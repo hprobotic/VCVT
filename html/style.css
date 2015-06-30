@@ -2,6 +2,9 @@ body {
     font-family: "Roboto", san-serif;
     overflow-x: hidden;
 }
+.container {
+  width: 990px;
+}
 #main-menu {
     padding-top: 12px !important;
     padding-bottom: 11px !important;
@@ -684,8 +687,9 @@ font-weight: bold;
 .main-slider .owl-theme .owl-controls{
     margin-top: 10px;
     text-align: center;
-    position: relative;
-    top: -200px;
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
 }
 
 
@@ -945,4 +949,229 @@ font-weight: bold;
   border: 2px solid #ff3333;
   background: none;
   color: #333333
+}
+.ext-link {
+  text-align: center;
+
+}
+.ext-link a {
+  color: #666666;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.ext-link a p{
+  margin-top: 10px
+}
+.forent {
+  background: #f2f4f5;
+  padding: 40px;
+}
+.forent h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.n-item {
+  width: 238px;
+  float: left;
+  margin-left: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.n-item img {
+  display: block;
+  width: 100%;
+}
+.n-item:hover .link-p {
+  background: rgba(0,0,0,0.7);
+}
+.n-item:first-child {
+  margin-left: 0px;
+}
+.link-p {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #FFF;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.link-p .n-title {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 18px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  padding: 20px;
+  text-shadow: 0 0 2px #333;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.link-p .n-date {
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  color: #FFF;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.link-p:hover .n-date {
+  opacity: 1;
+}
+.link-p:hover .n-title {
+  bottom: 24px;
+}
+.tiendo {
+  background: #ac000a;
+  color: #fff;
+  padding: 30px 0;
+}
+.tiendo  h4 {
+  text-transform: uppercase;
+}
+#tiendo .item{
+    background: #42bdc2;
+    padding: 30px 0px;
+    margin: 5px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+.contact-info .label {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 0px;
+  width: 110px;
+  display: inline-block;
+  text-align: left;
+  color: #666666;
+}
+.ft-info {
+  border-top: 1px solid #c2c2c2;
+  padding-top: 20px;
+  margin-top: 10px;
+
+
+}
+
+
+
+/* Example wrapper */
+.wrap {
+  position: relative;
+  margin: 3em 0;
+}
+
+/* Frame */
+.frame {
+  height: 250px;
+  line-height: 250px;
+  overflow: hidden;
+}
+.frame ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 50px;
+}
+.frame ul li {
+  float: left;
+  width: 227px;
+  height: 100%;
+  margin: 0 1px 0 0;
+  padding: 0;
+  background: #333;
+  color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+.frame ul li.active {
+  color: #fff;
+  background: #a03232;
+}
+
+/* Scrollbar */
+.scrollbar {
+  margin: 10px 0;
+  height: 10px;
+  background: #cd666c;
+  line-height: 0;
+}
+.scrollbar .handle {
+  width: 100px;
+  height: 20px;
+  background: #fff url(images/scroll-btn.png) no-repeat center;
+  border-radius: 3px;
+  cursor: pointer;
+  top: -5px;
+  position: relative;
+}
+.scrollbar .handle .mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+/* Pages */
+.pages {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+.pages li {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 4px;
+  text-indent: -999px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+.pages li:hover {
+  background: #aaa;
+}
+.pages li.active {
+  background: #666;
+}
+
+/* Controls */
+.controls { margin: 25px 0; text-align: center; }
+
+/* One Item Per Frame example*/
+.oneperframe { height: 300px; line-height: 300px; }
+.oneperframe ul li { width: 1140px; }
+.oneperframe ul li.active { background: #333; }
+
+/* Crazy example */
+
+.frame ul li {
+  padding: 0 2px;
+  background: none;
+  width: auto;
+}
+.frame ul li img {
+  display: block;
+  width: 100%;
 }
