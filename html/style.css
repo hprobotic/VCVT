@@ -927,6 +927,10 @@ font-weight: bold;
 .social {
     text-align: right;
 }
+.social ul li:last-child {
+
+  padding-right: 0px;
+}
 .right {
   text-align: right;
 }
